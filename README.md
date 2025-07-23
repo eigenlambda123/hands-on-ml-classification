@@ -81,16 +81,9 @@ Based on:
 
 ---
 
-## Notes
+## License
+This repository is open source under the MIT License.
 
-Key takeaways and insights from the project:
+---
 
-- **SGDClassifier** is very fast and memory-efficient for large datasets, but highly sensitive to feature scaling.
-- In **binary classification**, using accuracy alone is misleading on imbalanced datasets—**precision and recall** matter more.
-- **Decision threshold tuning** is powerful: by shifting the threshold, we can favor precision or recall depending on the use case.
-- **Cross-validation** gives a more reliable view of model performance than a single train/test split.
-- **Multiclass classification** in Scikit-Learn is handled automatically via **One-vs-All (OvA)** or **One-vs-One (OvO)** strategies.
-- **Multilabel classification** is supported by passing a list of target labels per instance. `KNeighborsClassifier` works well here because it can vote across multiple labels.
-- Visualizing the **confusion matrix** and focusing on the **most common errors** is more effective than blindly tuning hyperparameters.
-- **ROC AUC** is useful, but **Precision-Recall curves** are often better for highly imbalanced datasets.
-- Misclassifications between similar digits (like 4 vs 9, or 3 vs 5) often reveal the real limits of a model—not noise, but genuinely ambiguous data.
+_Created and maintained by RM Villa._
